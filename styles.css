@@ -1,0 +1,44 @@
+body{
+    width:100vw;
+    height:100vh;
+    background: linear-gradient(45deg, purple, rgb(3, 197, 223));
+    color:white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:0;
+    display:grid;
+    place-items:center;
+    overflow: hidden; /*para que no salga la barra de desplazamiento*/
+}
+.cell{
+    width:90px;
+    height:90px;
+    border:1px solid rgb(39, 39, 39);
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    display:grid;
+    place-items:center;
+    padding: 0 0 10px 0;
+    font-size:60px;
+    float:left; /* que se alineen uno al lado del otro*/
+    cursor:pointer;
+    user-select:none; /*para que no se pueda seleccionar el texto*/
+}
+#game{
+    grid-template-columns: 30% 30% 30%;
+    width:auto;
+    text-align:center;
+    padding: 20px;
+    padding-bottom: 0px;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    display: grid;
+}
+#results{
+    width: 300px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    font-size: 30px;
+}
